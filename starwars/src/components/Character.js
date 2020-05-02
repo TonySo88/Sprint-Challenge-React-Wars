@@ -24,10 +24,10 @@ const Character = props => {
             {starwarsData.map((movie) => {
                 return (
                     <CharacterCard 
-                    id={movie.id}
+                    key={movie.key}
                     name={movie.name}
-                    homeworld={movie.homeworld}
-                    films={movie.films}
+                    height={movie.height}
+                    mass={movie.mass}
                     />
                 );
             })}

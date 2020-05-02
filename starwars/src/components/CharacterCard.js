@@ -6,11 +6,11 @@ const Name = Styled.h1`
 `
 
 const CharacterCard = props => {
-    return <li className="character-card" key={props.id}>
+    return <div className="character-card" key={props.key}>
         <Name>{props.name}</Name>
-        <p>{props.homeworld}</p>
-        <p>{props.films}</p>
-    </li>
+        <p>{props.mass}</p>
+        <p>{props.height}</p>
+    </div>
 }
 
 export default CharacterCard
